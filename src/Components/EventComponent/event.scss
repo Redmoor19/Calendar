@@ -40,6 +40,41 @@
             padding: 15px;
         }
     }
+    &__hidden {
+        position: absolute;
+        z-index: 100;
+        border: 1px solid rgb(172, 171, 171);
+        box-shadow: 3px 3px 5px rgb(124, 124, 124);
+        border-radius: 10px;
+        width: 150px;
+        height: 100px;
+        padding: 10px 20px;
+        &-cross {
+            position: absolute;
+            width: 20px;
+            height: 20px;
+            top: 5px;
+            right: 5px;
+            cursor: pointer;
+            &:before, &:after {
+                content: "";
+                position: absolute;
+                width: 3px;
+                height: 25px;
+                background-color: black;
+                z-index: 110;
+                border-radius: 3px;
+                top: -2px;
+                right: 9px;
+            }
+            &:before {
+                transform: rotate(-45deg);
+            }
+            &:after {
+                transform: rotate(45deg);
+            }
+        }
+    }
 }
 
 .dots {

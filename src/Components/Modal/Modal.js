@@ -29,7 +29,7 @@ const Modal = ({show, closeModal, saveModal, left}) => {
             className='modal' 
             style={{
                 visibility: show === true ? 'visible' : 'hidden',
-                left: left - 310}}>
+                left: left}}>
                 <input 
                     placeholder='Enter the title' 
                     type="text" 

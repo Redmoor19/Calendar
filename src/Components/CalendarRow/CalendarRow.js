@@ -154,7 +154,7 @@ const CalendarRow = ({id, day, updateCalendar}) => {
 
     const modal = showModal ? 
         <Modal 
-            left={box.left} 
+            left={box.left < row.current.offsetWidth / 2 ? box.left + box.width + 10 : box.left - 310} 
             show={showModal}
             closeModal={closeModal}
             saveModal={saveEvent}
