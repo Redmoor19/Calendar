@@ -1,0 +1,60 @@
+.cover {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    left: 0;
+    top: 0;
+    z-index: 500;
+}
+
+.modal {
+    position: absolute;
+    width: 300px;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(165, 165, 165);
+    border-radius: 10px;
+    padding: 20px 20px;
+    z-index: 1000;
+    top: -5px;
+    input {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid  rgb(145, 145, 145);
+    }
+    textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px;
+        border: none;
+        border-bottom: 1px solid  rgb(145, 145, 145);
+        resize: none;
+        height: 80px;
+    }
+    button {
+        border: none;
+        height: 30px;
+        width: 80px;
+    }
+    .available {
+        background-color: rgb(138, 241, 147);
+        border-radius: 5px 0 0 5px;
+        cursor: pointer;
+    }
+    .maybe {
+        background-color: rgba(252, 249, 87, 0.904);
+        border-radius: 0 5px 5px 0;
+        cursor: pointer;
+    }
+    .save {
+        float: right;
+        background-color:#9ebce9;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+
+.active {
+    box-shadow: rgb(60 64 67 / 50%) 0 1px 3px 0, rgb(60 64 67 / 45%) 0 4px 8px 3px;
+}

@@ -1,0 +1,25 @@
+.row {
+    height: 100px;
+    width: 100%;
+    background-color: rgb(204, 204, 204);
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    border-right: 1px solid black;
+    &__day{
+        position: absolute;
+        margin: 0;
+        z-index: 1;
+        top: 3px;
+        left: 5px;
+        color:rgb(63, 62, 62);
+        background-color:rgb(204, 204, 204);
+        font-size: 15px;
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;
+        -khtml-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+    }
+}
